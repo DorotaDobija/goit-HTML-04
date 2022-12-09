@@ -105,6 +105,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .secondary-heading {
@@ -133,7 +134,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .footer-box {
@@ -298,6 +299,9 @@ body {
 .secondary-logo {
   color: var(--white-color);
 }
+/* .pictures-list-item:hover {
+  box-shadow: ; */
+}
 .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--focus-color);
@@ -309,15 +313,42 @@ body {
 }
 .mail-icon {
   fill: var(--secondary-color);
-  width: 10px;
-  height: 12px;
 }
 .tel-icon {
   fill: var(--secondary-color);
-  width: 16px;
-  height: 12px;
 }
 .logos-box {
   display: flex;
   gap: 30px;
+}
+.main-tekst-svg {
+  background-color: var(--button-background-color);
+  border-radius: 4px;
+}
+.client-svg { 
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.team-icons {
+  fill: var(--secondary-color);
+  width: 20px;
+  height: 20px;
+}
+.social-media-icons-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.icon-social-media:hover {
+  background-color: var(--focus-color);
+  border-radius: 50%;
+}
+.icon-social-media:hover > .team-icons {
+fill: var(--white-color);
 }

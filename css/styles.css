@@ -175,7 +175,7 @@ body {
   letter-spacing: 0.06em;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 4px;
 }
 
@@ -299,8 +299,10 @@ body {
 .secondary-logo {
   color: var(--white-color);
 }
-/* .pictures-list-item:hover {
-  box-shadow: ; */
+.pictures-list-item:hover {
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .contact-icon:hover,
 .contact-icon:focus {
@@ -333,8 +335,6 @@ body {
 }
 .team-icons {
   fill: var(--secondary-color);
-  width: 20px;
-  height: 20px;
 }
 .social-media-icons-box {
   display: flex;

@@ -53,6 +53,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  fill: currentColor;
 }
 
 .contact-links:hover,
@@ -61,6 +65,10 @@ body {
   text-decoration: none;
 }
 
+.contact-links:hover > svg,
+.contact-links:focus > svg {
+  fill: var(--focus-color);
+}
 .page-title {
   font-weight: 900;
   font-size: 44px;
@@ -300,24 +308,9 @@ body {
   color: var(--white-color);
 }
 .pictures-list-item:hover {
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: var(--focus-color);
-}
-.contact-svg {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.mail-icon {
-  fill: var(--secondary-color);
-}
-.tel-icon {
-  fill: var(--secondary-color);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .logos-box {
   display: flex;
@@ -325,12 +318,6 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .main-tekst-svg {
   background-color: var(--button-background-color);
-  border-radius: 4px;
-}
-.client-svg { 
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 .team-icons {
@@ -344,11 +331,33 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   padding-left: 32px;
   padding-right: 32px;
 }
-
-.icon-social-media:hover {
+.icon-social-media:hover,
+.icon-social-media:focus {
   background-color: var(--focus-color);
   border-radius: 50%;
 }
-.icon-social-media:hover > .team-icons {
-fill: var(--white-color);
+.icon-social-media:hover > svg,
+.icon-social-media:focus > svg {
+  fill: var(--white-color);
+}
+.client-svg {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-svg > svg {
+  width: 106px;
+  height: 60px;
+}
+.client-svg:hover,
+.client-svg:focus {
+  fill: var(--focus-color);
+  border-color: var(--focus-color);
+}
+.client-icon {
+  fill: var(--secondary-color);
 }

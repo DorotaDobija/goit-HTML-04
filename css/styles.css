@@ -298,3 +298,23 @@ body {
 .secondary-logo {
   color: var(--white-color);
 }
+.contact-icon {
+  fill: var(--secondary-color);
+}
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--focus-color);
+}
+.contact-svg {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.mail-icon {
+  width: 10px;
+  height: 12px;
+}
+.tel-icon {
+  width: 16px;
+  height: 12px;
+}

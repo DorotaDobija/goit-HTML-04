@@ -7,6 +7,7 @@
   --main-background-color: #2f303a;
   --button-background-color: #f5f4fa;
   --title-background-color: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -79,16 +80,18 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
 }
-
+.title-section {
+  background-color: var(--main-background-color);
+}
 .title-box {
   max-width: 1600px;
-  background-color: var(--main-background-color);
   background-image: linear-gradient(
       to top,
       var(--title-background-color),
       var(--title-background-color)
     ),
     url('../images/backgroundpic.jpg');
+  background-position: center;
 }
 
 .button-title {
@@ -260,6 +263,13 @@ body {
   gap: 30px;
   padding: 0;
 }
+/* .main-text-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+} */
 .picture-box {
   display: flex;
   justify-content: space-between;
@@ -330,12 +340,17 @@ body {
   display: flex;
   gap: 30px;
 }
-.main-tekst-svg {
+.main-text-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   background-color: var(--button-background-color);
   border-radius: 4px;
 }
 .team-icons {
-  fill: var(--secondary-color);
+  fill: var(--icon-color);
 }
 .social-media-icons-box {
   display: flex;
@@ -350,44 +365,56 @@ body {
   background-color: var(--focus-color);
   border-radius: 50%;
 }
-.icon-social-media:hover > svg,
-.icon-social-media:focus > svg {
+.icon-social-media:hover > .team-icons,
+.icon-social-media:focus > .team-icons {
   fill: var(--white-color);
 }
-.client-svg {
+.client-logo {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--icon-color);
 }
-.client-svg > svg {
+.client-logo > .client-svg {
   width: 106px;
   height: 60px;
 }
-.client-svg:hover,
-.client-svg:focus {
+.client-logo:hover,
+.client-logo:focus {
   fill: var(--focus-color);
   border-color: var(--focus-color);
-}
-.client-icon {
-  fill: var(--secondary-color);
 }
 .main-footer-box {
   display: flex;
   justify-items: space-between;
   gap: 70px;
 }
-.footer-icons {
-  fill: var(--white-color);
+.footer-icons-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  gap: 10px;
+}
+.footer-icon-social-media {
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.footer-icons {
+  fill: var(--white-color);
 }
 .footer-icons:hover,
 .footer-icons:focus {
   background-color: var(--focus-color);
+  border-radius: 50%;
 }
 .footer-icons-header {
   color: var(--white-color);
@@ -395,5 +422,4 @@ body {
   font-size: 14px;
   line-height: 16px;
   padding-top: 72px;
-  margin-bottom: 20px;
 }

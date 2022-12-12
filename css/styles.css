@@ -92,6 +92,7 @@ body {
     ),
     url('../images/backgroundpic.jpg');
   background-position: center;
+  margin: 0 auto;
 }
 
 .button-title {
@@ -263,13 +264,6 @@ body {
   gap: 30px;
   padding: 0;
 }
-/* .main-text-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-} */
 .picture-box {
   display: flex;
   justify-content: space-between;
@@ -344,8 +338,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 120px;
+  padding: 25px 100px;
   background-color: var(--button-background-color);
   border-radius: 4px;
 }
@@ -370,18 +363,13 @@ body {
   fill: var(--white-color);
 }
 .client-logo {
-  width: 170px;
-  height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
-}
-.client-logo > .client-svg {
-  width: 106px;
-  height: 60px;
+  padding: 16px 32px;
 }
 .client-logo:hover,
 .client-logo:focus {
